@@ -1,0 +1,1978 @@
+body {
+    
+    background-color: #1c1c1c;
+    color: white;
+    font-family: Arial;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    margin-bottom: 40px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    
+}
+
+.formula {
+    color: cyan;
+    font-size: 20px;
+}
+
+.back {
+    color: #00aaff;
+    text-decoration: none;
+}
+
+.school-logo {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 100px;
+    height: auto;
+    
+    
+}
+
+.my-logo {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 100px;
+    height: auto;
+    
+
+
+}
+
+.pmg {
+    width: 400px;
+    
+}
+
+.pmgg{
+    width: 225px;
+}
+
+.pmggg{
+    width: 300px;
+}
+
+.glow-title {
+    text-align: center;
+    font-size: 50px;
+    color: #ffffff;
+    text-shadow: 0 0 10px #000000;
+    font-family: sans-serif;
+}
+.subject-math-btn {
+    background: linear-gradient(135deg, #4a90e2, #357ABD); 
+    color: white;
+    border: 2px solid #2d5ea8;
+    padding: 14px 32px;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+}
+
+
+.subject-math-btn::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(120deg, rgba(255,255,255,0.2), transparent 60%);
+    transform: rotate(45deg);
+    transition: all 0.5s;
+    pointer-events: none;
+}
+
+.subject-math-btn:hover::before {
+    top: -20%;
+    left: -20%;
+}
+
+.subject-math-btn:hover {
+    box-shadow: 0 6px 15px rgba(53,122,189,0.6);
+    transform: translateY(-2px);
+}
+
+.subject-math-btn:active {
+    transform: scale(0.96);
+}
+
+.subject-physics-btn {
+    background: linear-gradient(135deg, #0d1dad, #3c0d6a); 
+    color: white;
+    border: 2px solid #2a024c;
+    padding: 14px 32px;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+}
+
+
+.subject-physics-btn::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(circle, rgba(255,255,255,0.08) 1px, transparent 1px);
+    background-size: 10px 10px;
+    opacity: 0.2;
+    pointer-events: none;
+}
+
+
+.subject-physics-btn:hover {
+    box-shadow: 0 6px 15px rgba(106,13,173,0.6);
+    transform: translateY(-2px);
+}
+
+.subject-physics-btn:active {
+    transform: scale(0.96);
+}
+
+.subject-biology-btn {
+    background: linear-gradient(135deg, #4caf50, #2e7d32); 
+    color: white;
+    border: 2px solid #1b5e20;
+    padding: 14px 32px;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+}
+
+
+.subject-biology-btn::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(circle, rgba(255,255,255,0.08) 1px, transparent 1px);
+    background-size: 12px 12px;
+    opacity: 0.2;
+    pointer-events: none;
+}
+
+
+.subject-biology-btn:hover {
+    box-shadow: 0 6px 15px rgba(46,125,50,0.6);
+    transform: translateY(-2px);
+}
+
+.subject-biology-btn:active {
+    transform: scale(0.96);
+}
+
+.subject-chemistry-btn {
+    background: linear-gradient(135deg, #00bcd4, #00796b); 
+    color: white;
+    border: 2px solid #004d40;
+    padding: 14px 32px;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+}
+
+
+.subject-chemistry-btn::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(circle, rgba(255,255,255,0.08) 2px, transparent 2px);
+    background-size: 15px 15px;
+    opacity: 0.2;
+    pointer-events: none;
+}
+
+
+.subject-chemistry-btn:hover {
+    box-shadow: 0 6px 15px rgba(0,188,212,0.6);
+    transform: translateY(-2px);
+}
+
+.subject-chemistry-btn:active {
+    transform: scale(0.96);
+}
+
+.subject-tech-btn {
+    background: linear-gradient(135deg, #00c6ff, #0072ff); 
+    color: white;
+    border: 2px solid #005f99;
+    padding: 14px 32px;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+}
+
+
+.subject-tech-btn::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: repeating-linear-gradient(
+        0deg,
+        rgba(255,255,255,0.08) 0px,
+        rgba(255,255,255,0.08) 1px,
+        transparent 1px,
+        transparent 4px
+    ), repeating-linear-gradient(
+        90deg,
+        rgba(255,255,255,0.08) 0px,
+        rgba(255,255,255,0.08) 1px,
+        transparent 1px,
+        transparent 4px
+    );
+    opacity: 0.3;
+    pointer-events: none;
+}
+
+
+.subject-tech-btn:hover {
+    box-shadow: 0 6px 15px rgba(0,198,255,0.6), 0 0 10px rgba(0,198,255,0.4);
+    transform: translateY(-2px);
+}
+
+.subject-tech-btn:active {
+    transform: scale(0.96);
+}
+
+.subject-history-btn {
+    background: linear-gradient(135deg, #a67c52, #6b4c2d);
+    color: white;
+    border: 2px solid #533d27;
+    padding: 14px 32px;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Georgia', serif;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+}
+
+
+.subject-history-btn::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(circle, rgba(255,255,255,0.05) 1px, transparent 1px);
+    background-size: 8px 8px;
+    opacity: 0.2;
+    pointer-events: none;
+}
+
+
+.subject-history-btn:hover {
+    box-shadow: 0 6px 15px rgba(107,76,45,0.6);
+    transform: translateY(-2px);
+}
+
+.subject-history-btn:active {
+    transform: scale(0.96);
+}
+
+.subject-geography-btn {
+    background: linear-gradient(135deg, #276619, #1e5631); 
+    color: white;
+    border: 2px solid #154021;
+    padding: 14px 32px;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+}
+
+
+.subject-geography-btn::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(circle, rgba(255,255,255,0.05) 2px, transparent 2px);
+    background-size: 12px 12px;
+    opacity: 0.2;
+    pointer-events: none;
+}
+
+
+.subject-geography-btn:hover {
+    box-shadow: 0 6px 15px rgba(30,86,49,0.6);
+    transform: translateY(-2px);
+}
+
+.subject-geography-btn:active {
+    transform: scale(0.96);
+}
+
+.subject-universe-btn {
+    background: linear-gradient(135deg, #1b0038, #3a0d5c); 
+    color: white;
+    border: 2px solid #1f003f;
+    padding: 14px 32px;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+}
+
+
+.subject-universe-btn::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(circle, rgba(255,255,255,0.08) 1px, transparent 1px);
+    background-size: 10px 10px;
+    opacity: 0.3;
+    pointer-events: none;
+}
+
+
+.subject-universe-btn:hover {
+    box-shadow: 0 6px 15px rgba(58,13,92,0.6);
+    transform: translateY(-2px);
+}
+
+.subject-universe-btn:active {
+    transform: scale(0.96);
+}
+.heart-btn {
+    background: linear-gradient(135deg, #fa3246, #942d3e);
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    text-decoration: none
+}
+
+
+.heart-btn:hover {
+    box-shadow: 0 8px 20px rgba(192, 54, 68, 0.4);
+    transform: translateY(-2px);
+}
+
+
+.heart-btn:active {
+    transform: scale(0.96);
+}
+
+
+.heart-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255,255,255,0.4), transparent);
+    transition: 0.5s;
+}
+
+.heart-btn:hover::before {
+    left: 100%;
+}
+.brain-btn {
+    background: linear-gradient(135deg, #f3b5b8, #f5c4c6);
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    
+}
+
+
+.brain-btn:hover {
+    box-shadow: 0 0 20px #ebd5e3, 0 0 40px #3c4146;
+    transform: translateY(-2px);
+}
+
+
+.brain-btn:active {
+    transform: scale(0.96);
+}
+
+
+.brain-btn::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.2) 0%, transparent 70%);
+    transform: rotate(45deg);
+    transition: all 0.5s;
+    pointer-events: none;
+}
+
+.brain-btn:hover::before {
+    top: -30%;
+    left: -30%;
+}
+.cell-btn {
+    background: linear-gradient(135deg, #76c893, #4caf7f); 
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1); 
+}
+
+
+.cell-btn:hover {
+    box-shadow: 0 6px 15px rgba(76, 175, 127, 0.5); 
+    transform: translateY(-2px);
+}
+
+
+.cell-btn:active {
+    transform: scale(0.96);
+}
+
+.immune-btn {
+    background: linear-gradient(135deg, #999e98, #cbcdcd); 
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(190, 182, 182, 0.2); 
+}
+
+
+.immune-btn:hover {
+    box-shadow: 0 8px 20px #757574; 
+    transform: translateY(-2px);
+}
+
+
+.immune-btn:active {
+    transform: scale(0.96);
+}
+
+.muscle-btn {
+    background: linear-gradient(135deg, #dd8a8a, #c54d4d); 
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1); 
+}
+
+
+.muscle-btn:hover {
+    box-shadow: 0 6px 15px #a12c2c; 
+    transform: translateY(-2px);
+}
+
+
+.muscle-btn:active {
+    transform: scale(0.96);
+}
+.atom-btn {
+    background: linear-gradient(135deg, #a49db4, #2575fc); 
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 6px rgba(5, 255, 243, 0.185); 
+}
+
+
+.atom-btn:hover {
+    box-shadow: 0 6px 15px rgba(37, 117, 252, 0.5); 
+    transform: translateY(-2px);
+}
+
+
+.atom-btn:active {
+    transform: scale(0.96);
+}
+.fire-btn {
+    background: linear-gradient(135deg, #f07f13, #800909); 
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 6px rgba(134, 73, 3, 0.1); 
+}
+
+
+.fire-btn:hover {
+    box-shadow: 0 6px 15px rgba(255, 157, 65, 0.5); 
+    transform: translateY(-2px);
+}
+
+
+.fire-btn:active {
+    transform: scale(0.96);
+}
+.acid-base-btn {
+    background: linear-gradient(90deg, #b4160b 50%, #ac46d4 50%); 
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+
+.acid-base-btn:hover {
+    box-shadow: 0 6px 15px rgba(3, 253, 16, 0.3); 
+    transform: translateY(-2px);
+}
+
+
+.acid-base-btn:active {
+    transform: scale(0.96);
+}
+.bond-btn {
+    background: linear-gradient(135deg, #50abff, #ff0000); 
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+
+.bond-btn:hover {
+    box-shadow: 0 6px 15px rgba(6, 38, 92, 0.5); 
+    transform: translateY(-2px);
+}
+
+
+.bond-btn:active {
+    transform: scale(0.96);
+}
+.periodic-btn {
+    background: linear-gradient(135deg, #633330, #9A8F8A); 
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1); 
+}
+
+.periodic-btn:hover {
+    box-shadow: 0 6px 15px rgba(42, 82, 152, 0.5); 
+    transform: translateY(-2px);
+}
+
+
+.periodic-btn:active {
+    transform: scale(0.96);
+}
+.stars-btn {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); 
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 6px rgba(41, 176, 255, 0.2);
+}
+
+
+.stars-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: radial-gradient(white 1px, transparent 1px);
+    background-size: 20px 20px;
+    opacity: 0.3;
+    pointer-events: none;
+}
+
+
+.stars-btn:hover {
+    box-shadow: 0 6px 15px rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+
+.stars-btn:active {
+    transform: scale(0.96);
+}
+.galaxy-btn {
+    background: linear-gradient(135deg, #1a002b, #3a0ca3, #7209b7); 
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+
+
+.galaxy-btn::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(white 1px, transparent 1px);
+    background-size: 18px 18px;
+    opacity: 0.2;
+    pointer-events: none;
+}
+
+
+.galaxy-btn:hover {
+    box-shadow: 0 6px 18px rgba(114, 9, 183, 0.5);
+    transform: translateY(-2px);
+}
+
+
+.galaxy-btn:active {
+    transform: scale(0.96);
+}
+
+.solar-btn {
+    background: linear-gradient(135deg, #ffb703, #fb8500, #023047); 
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+
+
+.solar-btn::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(white 1px, transparent 1px);
+    background-size: 25px 25px;
+    opacity: 0.2;
+    pointer-events: none;
+}
+
+
+.solar-btn:hover {
+    box-shadow: 0 6px 18px rgba(255, 183, 3, 0.5); 
+    transform: translateY(-2px);
+}
+
+
+.solar-btn:active {
+    transform: scale(0.96);
+}
+
+.blackhole-btn {
+    background: radial-gradient(circle at center, #000000, #0a0a0a, #1a1a1a); /* deep dark core */
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.6); 
+}
+
+
+.blackhole-btn::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 12px;
+    background: radial-gradient(circle, transparent 60%, rgba(138, 43, 226, 0.2));
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+
+.blackhole-btn:hover {
+    box-shadow: 0 8px 25px rgba(138, 43, 226, 0.4); 
+    transform: scale(1.03); 
+}
+
+
+.blackhole-btn:active {
+    transform: scale(0.95);
+}
+.planet-btn {
+    background: linear-gradient(135deg, #3a86ff, #8338ec); 
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+
+
+.planet-btn::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(rgba(255,255,255,0.15) 1px, transparent 1px);
+    background-size: 22px 22px;
+    opacity: 0.3;
+    pointer-events: none;
+}
+
+
+.planet-btn:hover {
+    box-shadow: 0 6px 18px rgba(58, 134, 255, 0.5);
+    transform: translateY(-2px);
+}
+
+
+.planet-btn:active {
+    transform: scale(0.96);
+}
+
+.quantum-btn {
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e); 
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+}
+
+
+.quantum-btn::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(120deg, transparent, rgba(255,255,255,0.15), transparent);
+    opacity: 0.3;
+    pointer-events: none;
+}
+
+
+.quantum-btn:hover {
+    box-shadow: 0 6px 20px rgba(138, 43, 226, 0.5); 
+    transform: translateY(-2px) scale(1.02); 
+}
+
+
+.quantum-btn:active {
+    transform: scale(0.95);
+}
+
+.gravity-btn {
+    background: linear-gradient(135deg, #434343, #000000); 
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.514); 
+}
+
+
+.gravity-btn::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at top, rgba(255,255,255,0.08), transparent 60%);
+    pointer-events: none;
+}
+
+
+.gravity-btn:hover {
+    transform: translateY(2px); 
+    box-shadow: 0 2px 6px rgba(0,0,0,0.6);
+}
+
+
+.gravity-btn:active {
+    transform: translateY(4px) scale(0.97);
+}
+
+.mechanic-btn {
+    background: linear-gradient(135deg, #555555, #888888); 
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+
+
+.mechanic-btn::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(rgba(255,255,255,0.1) 1px, transparent 1px);
+    background-size: 15px 15px;
+    opacity: 0.2;
+    pointer-events: none;
+}
+
+
+.mechanic-btn:hover {
+    box-shadow: 0 6px 15px rgba(17, 15, 15, 0.5);
+    transform: translateY(-2px);
+}
+
+
+.mechanic-btn:active {
+    transform: scale(0.96);
+}
+
+.optic-btn {
+    background: linear-gradient(135deg, #4fa4bb, #2b75cf); 
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+
+
+.optic-btn::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 20% 30%, rgba(255,255,255,0.2), transparent 70%);
+    pointer-events: none;
+}
+
+
+.optic-btn:hover {
+    box-shadow: 0 6px 15px rgba(0,198,255,0.5);
+    transform: translateY(-2px);
+}
+
+
+.optic-btn:active {
+    transform: scale(0.96);
+}
+
+.electricity-btn {
+    background: linear-gradient(135deg, #beb5a0, #d1fdff); 
+    color: #222; 
+    border: none;
+    padding: 12px 28px;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+
+
+.electricity-btn::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(45deg, rgba(255,255,255,0.2) 25%, transparent 25%, transparent 50%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0.2) 75%, transparent 75%, transparent);
+    background-size: 20px 20px;
+    pointer-events: none;
+    opacity: 0.3;
+}
+
+
+.electricity-btn:hover {
+    box-shadow: 0 6px 15px rgba(255, 221, 146, 0.6);
+    transform: translateY(-2px);
+}
+
+
+.electricity-btn:active {
+    transform: scale(0.96);
+}
+
+.tornado-btn {
+    background: linear-gradient(135deg, #dac670, #c0c0c0); 
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+
+
+.tornado-btn::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(circle at 50% 30%, rgba(255,255,255,0.05), transparent 70%);
+    pointer-events: none;
+}
+
+
+.tornado-btn:hover {
+    box-shadow: 0 6px 15px rgba(192,192,192,0.5);
+    transform: translateY(-2px) rotate(2deg); 
+}
+
+
+.tornado-btn:active {
+    transform: scale(0.96) rotate(-1deg);
+}
+
+.weather-btn {
+    background: linear-gradient(135deg, #32e778, #acb6e5); 
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+
+
+.weather-btn::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(rgba(255,255,255,0.15) 1px, transparent 1px);
+    background-size: 25px 25px;
+    opacity: 0.3;
+    pointer-events: none;
+}
+
+
+.weather-btn:hover {
+    box-shadow: 0 6px 15px rgba(172,182,229,0.5);
+    transform: translateY(-2px);
+}
+
+
+.weather-btn:active {
+    transform: scale(0.96);
+}
+
+.ocean-btn {
+    background: linear-gradient(135deg, #00b4db, #0083b0); 
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+
+
+.ocean-btn::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(rgba(255,255,255,0.1) 2px, transparent 2px);
+    background-size: 20px 20px;
+    opacity: 0.2;
+    pointer-events: none;
+}
+
+
+.ocean-btn:hover {
+    box-shadow: 0 6px 15px rgba(0,180,219,0.5);
+    transform: translateY(-2px);
+}
+
+
+.ocean-btn:active {
+    transform: scale(0.96);
+}
+
+.map-btn {
+    background: linear-gradient(135deg, #4fa899, #3c8031); 
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+
+
+.map-btn::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(rgba(255,255,255,0.08) 1px, transparent 1px);
+    background-size: 15px 15px;
+    opacity: 0.3;
+    pointer-events: none;
+}
+
+
+.map-btn:hover {
+    box-shadow: 0 6px 15px rgba(108,168,79,0.5);
+    transform: translateY(-2px);
+}
+
+
+.map-btn:active {
+    transform: scale(0.96);
+}
+
+.mountain-btn {
+    background: linear-gradient(135deg, #74c0fc, #1e3c72); 
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+
+
+.mountain-btn::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(white 1px, transparent 1px);
+    background-size: 10px 10px;
+    opacity: 0.4;
+    pointer-events: none;
+    animation: snow 2s linear infinite;
+}
+
+
+.mountain-btn:hover {
+    box-shadow: 0 6px 15px rgba(255, 255, 255, 0.5);
+    transform: translateY(-2px);
+}
+
+
+.mountain-btn:active {
+    transform: scale(0.96);
+}
+
+
+@keyframes snow {
+    0% { background-position: 0 0; }
+    100% { background-position: 0 20px; }
+}
+
+.sin-btn {
+    background: linear-gradient(135deg, #1e3c72, #2a5298); 
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-family: monospace; 
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+
+
+.sin-btn::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: repeating-linear-gradient(
+        45deg,
+        rgba(255,255,255,0.15),
+        rgba(255,255,255,0.15) 2px,
+        transparent 2px,
+        transparent 6px
+    );
+    opacity: 0.3;
+    pointer-events: none;
+}
+
+
+.sin-btn:hover {
+    box-shadow: 0 6px 15px rgba(42,82,152,0.5);
+    transform: translateY(-2px);
+}
+
+
+.sin-btn:active {
+    transform: scale(0.96);
+}
+
+.cos-btn {
+    background: linear-gradient(135deg, #2e982a, #1e7229); 
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-family: monospace; 
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+
+
+.cos-btn::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: repeating-linear-gradient(
+        45deg,
+        rgba(255,255,255,0.15) 0px,
+        rgba(255,255,255,0.15) 2px,
+        transparent 2px,
+        transparent 6px
+    );
+    background-position: -3px 0; 
+    opacity: 0.3;
+    pointer-events: none;
+}
+
+
+.cos-btn:hover {
+    box-shadow: 0 6px 15px rgba(42, 152, 51, 0.5);
+    transform: translateY(-2px);
+}
+
+
+.cos-btn:active {
+    transform: scale(0.96);
+}
+
+.tan-btn {
+    background: linear-gradient(135deg, #ffb347, #ffcc33); 
+    color: #222; 
+    border: none;
+    padding: 12px 28px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-family: monospace; 
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+
+
+.tan-btn::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: repeating-linear-gradient(
+        45deg,
+        rgba(255,255,255,0.15) 0px,
+        rgba(255,255,255,0.15) 3px,
+        transparent 3px,
+        transparent 6px
+    );
+    opacity: 0.3;
+    pointer-events: none;
+}
+
+
+.tan-btn:hover {
+    box-shadow: 0 6px 15px rgba(255,179,71,0.5);
+    transform: translateY(-2px);
+}
+
+
+.tan-btn:active {
+    transform: scale(0.96);
+}
+
+.pi-btn {
+    background: linear-gradient(135deg, #8966a1, #3c0d6a); 
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-family: monospace; 
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+
+
+.pi-btn::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
+    background-size: 15px 15px;
+    opacity: 0.3;
+    pointer-events: none;
+}
+
+
+.pi-btn:hover {
+    box-shadow: 0 6px 15px rgba(106,13,173,0.5);
+    transform: translateY(-2px);
+}
+
+
+.pi-btn:active {
+    transform: scale(0.96);
+}
+
+.log-btn {
+    background: linear-gradient(135deg, #2a9d8f, #264653); 
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-family: monospace; 
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+
+
+.log-btn::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: repeating-linear-gradient(
+        45deg,
+        rgba(255,255,255,0.1) 0px,
+        rgba(255,255,255,0.1) 2px,
+        transparent 2px,
+        transparent 6px
+    );
+    opacity: 0.3;
+    pointer-events: none;
+}
+
+
+.log-btn:hover {
+    box-shadow: 0 6px 15px rgba(42,157,143,0.5);
+    transform: translateY(-2px);
+}
+
+
+.log-btn:active {
+    transform: scale(0.96);
+}
+
+.cpu-btn {
+    background: linear-gradient(135deg, #a8a8a8, #5c5c5c); 
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-family: monospace; 
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+}
+
+
+.cpu-btn::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: repeating-linear-gradient(
+        0deg,
+        rgba(255,255,255,0.08) 0px,
+        rgba(255,255,255,0.08) 1px,
+        transparent 1px,
+        transparent 4px
+    ), repeating-linear-gradient(
+        90deg,
+        rgba(255,255,255,0.08) 0px,
+        rgba(255,255,255,0.08) 1px,
+        transparent 1px,
+        transparent 4px
+    );
+    opacity: 0.3;
+    pointer-events: none;
+}
+
+
+.cpu-btn:hover {
+    box-shadow: 0 6px 15px rgba(168,168,168,0.5);
+    transform: translateY(-2px);
+}
+
+
+.cpu-btn:active {
+    transform: scale(0.96);
+}
+
+.gps-btn {
+    background: linear-gradient(135deg, #00ff22, #0072ff); 
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-family: monospace;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+}
+
+
+.gps-btn::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(circle, rgba(255,255,255,0.1) 2px, transparent 2px);
+    background-size: 20px 20px;
+    opacity: 0.3;
+    pointer-events: none;
+}
+
+
+.gps-btn:hover {
+    box-shadow: 0 6px 15px rgba(0,198,255,0.5);
+    transform: translateY(-2px);
+}
+
+
+.gps-btn:active {
+    transform: scale(0.96);
+}
+
+.keyboard-btn {
+    background: linear-gradient(145deg, #4a4a4a, #2a2a2a); 
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 6px; 
+    font-size: 16px;
+    font-family: monospace;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0 6px #1c1c1c, 0 10px 12px rgba(0,0,0,0.3); 
+    transition: all 0.1s ease;
+    text-decoration: none;
+}
+
+
+.keyboard-btn:hover {
+    background: linear-gradient(145deg, #5c5c5c, #3a3a3a);
+    transform: translateY(-2px);
+}
+
+
+.keyboard-btn:active {
+    transform: translateY(6px); 
+    box-shadow: 0 0 #1c1c1c, 0 4px 6px rgba(0,0,0,0.3); 
+}
+
+.mouse-btn {
+    background: linear-gradient(145deg, #4a4a4a, #2a2a2a); 
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 20px; 
+    font-size: 16px;
+    font-family: monospace;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0 6px #1c1c1c, 0 10px 12px rgba(0,0,0,0.3); 
+    transition: all 0.1s ease;
+    text-decoration: none;
+}
+
+
+.mouse-btn:hover {
+    background: linear-gradient(145deg, #5c5c5c, #3a3a3a);
+    transform: translateY(-2px);
+}
+
+
+.mouse-btn:active {
+    transform: translateY(6px); 
+    box-shadow: 0 0 #1c1c1c, 0 4px 6px rgba(0,0,0,0.3); 
+}
+
+.system-btn {
+    background: #000; 
+    color: #0f0; 
+    border: 2px solid #0f0;
+    padding: 12px 28px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: monospace; 
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+
+.system-btn::after {
+    content: attr(data-text); 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #0f0;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid #0f0; 
+    animation: typing 2s steps(30) infinite, blink 0.7s step-end infinite;
+}
+
+
+.system-btn span {
+    visibility: hidden;
+}
+
+
+@keyframes typing {
+    0% { width: 0; }
+    50% { width: 100%; }
+    100% { width: 0; }
+}
+
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
+.coding-btn {
+    background: #1e1e1e; 
+    color: #00ff9f; 
+    border: 2px solid #00ff9f;
+    padding: 12px 28px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: monospace; 
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+
+.coding-btn::after {
+    content: attr(data-text); 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #00ff9f;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid #00ff9f; 
+    animation: coding-typing 2s steps(30) infinite, coding-blink 0.7s step-end infinite;
+}
+
+
+.coding-btn span {
+    visibility: hidden;
+}
+
+
+@keyframes coding-typing {
+    0% { width: 0; }
+    50% { width: 100%; }
+    100% { width: 0; }
+}
+
+
+@keyframes coding-blink {
+    50% { border-color: transparent; }
+}
+
+.app-btn {
+    background: linear-gradient(135deg, #ff6a00, #ee0979); 
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 16px; 
+    font-size: 16px;
+    font-family: monospace;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+}
+
+
+.app-btn::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(120deg, rgba(255,255,255,0.3), transparent 60%);
+    transform: rotate(45deg);
+    transition: all 0.5s;
+    pointer-events: none;
+}
+
+.app-btn:hover::before {
+    top: -20%;
+    left: -20%;
+}
+
+.app-btn:hover {
+    box-shadow: 0 6px 20px rgba(238,9,121,0.6), 0 0 10px rgba(255,106,0,0.6);
+    transform: translateY(-2px);
+}
+
+.app-btn:active {
+    transform: scale(0.96);
+}
+
+.wireless-btn {
+    background: linear-gradient(135deg, #00c6ff, #2f00ff); 
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 16px; 
+    font-size: 16px;
+    font-family: monospace;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+}
+
+
+.wireless-btn::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(circle, rgba(255,255,255,0.15) 2px, transparent 2px);
+    background-size: 20px 20px;
+    opacity: 0.3;
+    pointer-events: none;
+    animation: wave 2s linear infinite;
+}
+
+
+.wireless-btn:hover {
+    box-shadow: 0 6px 20px rgba(0,198,255,0.6), 0 0 10px rgba(0,198,255,0.4);
+    transform: translateY(-2px);
+}
+
+
+.wireless-btn:active {
+    transform: scale(0.96);
+}
+
+
+@keyframes wave {
+    0% { background-position: 0 0; }
+    100% { background-position: 0 20px; }
+}
+
+.internet-btn {
+    background: linear-gradient(135deg, #00c6ff, #0072ff); 
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 16px; 
+    font-size: 16px;
+    font-family: monospace;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+}
+
+
+.internet-btn::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: repeating-linear-gradient(
+        45deg,
+        rgba(255,255,255,0.1) 0px,
+        rgba(255,255,255,0.1) 2px,
+        transparent 2px,
+        transparent 6px
+    );
+    opacity: 0.3;
+    pointer-events: none;
+    animation: move-lines 2s linear infinite;
+}
+
+
+.internet-btn:hover {
+    box-shadow: 0 6px 20px rgba(0,198,255,0.6), 0 0 10px rgba(0,198,255,0.4);
+    transform: translateY(-2px);
+}
+
+
+.internet-btn:active {
+    transform: scale(0.96);
+}
+
+
+@keyframes move-lines {
+    0% { background-position: 0 0; }
+    100% { background-position: 20px 20px; }
+}
+
+.touchscreen-btn {
+    background: linear-gradient(145deg, rgba(255,255,255,0.1), rgba(200,200,200,0.1));
+    color: #fff;
+    border: 2px solid rgba(255,255,255,0.3);
+    padding: 12px 28px;
+    border-radius: 16px; 
+    font-size: 16px;
+    font-family: monospace;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+    transition: all 0.2s ease;
+}
+
+
+.touchscreen-btn::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(120deg, rgba(255,255,255,0.3), transparent 60%);
+    transform: rotate(45deg);
+    transition: all 0.5s;
+    pointer-events: none;
+}
+
+.touchscreen-btn:hover::before {
+    top: -20%;
+    left: -20%;
+}
+
+
+.touchscreen-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+}
+
+
+.touchscreen-btn:active {
+    transform: scale(0.95);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+}
+
+.ww1-btn {
+    background: linear-gradient(135deg, #6b5b3e, #3e3a2e); 
+    color: #fff;
+    border: 2px solid #4a432d;
+    padding: 12px 28px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: 'Courier New', monospace; 
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+    transition: all 0.3s ease;
+}
+
+
+.ww1-btn::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(rgba(255,255,255,0.05) 1px, transparent 1px);
+    background-size: 6px 6px;
+    opacity: 0.2;
+    pointer-events: none;
+}
+
+
+.ww1-btn:hover {
+    box-shadow: 0 6px 12px rgba(0,0,0,0.5);
+    transform: translateY(-2px);
+}
+
+
+.ww1-btn:active {
+    transform: scale(0.96);
+}
+
+.ww2-btn {
+    background: linear-gradient(135deg, #4f6b3e, #3e3c2e); 
+    color: #fff;
+    border: 2px solid #3a4a2d;
+    padding: 12px 28px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: 'Courier New', monospace; 
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+    transition: all 0.3s ease;
+}
+
+
+.ww2-btn::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(rgba(255,255,255,0.05) 1px, transparent 1px);
+    background-size: 6px 6px;
+    opacity: 0.2;
+    pointer-events: none;
+}
+
+
+.ww2-btn:hover {
+    box-shadow: 0 6px 12px rgba(0,0,0,0.5);
+    transform: translateY(-2px);
+}
+
+
+.ww2-btn:active {
+    transform: scale(0.96);
+}
+
+.wch-btn {
+    background: linear-gradient(135deg, #3e4e6b, #2e3b3e); 
+    color: #fff;
+    border: 2px solid #2d3a4a;
+    padding: 12px 28px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: 'Courier New', monospace; 
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+    transition: all 0.3s ease;
+}
+
+
+.wch-btn::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(rgba(255,255,255,0.05) 1px, transparent 1px);
+    background-size: 6px 6px;
+    opacity: 0.2;
+    pointer-events: none;
+}
+
+
+.wch-btn:hover {
+    box-shadow: 0 6px 12px rgba(0,0,0,0.5);
+    transform: translateY(-2px);
+}
+
+
+.wch-btn:active {
+    transform: scale(0.96);
+}
